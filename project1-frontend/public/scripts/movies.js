@@ -17,6 +17,11 @@ const renderMovies = async () => {
       const title = document.createElement("h3");
       title.className = "card-title";
       title.textContent = movie.title || "Untitled";
+
+      const release_date = document.createElement("p")
+      release_date.className = "release-date-card";
+      release_date.textContent = movie.release_date || "Coming Soon"
+
       const seeMore = document.createElement('a');
       seeMore.className = 'card-link';
       const id = movie.id;
@@ -25,6 +30,7 @@ const renderMovies = async () => {
       seeMore.textContent = 'See More';
 
       overlay.appendChild(title);
+      overlay.appendChild(release_date)
       overlay.appendChild(seeMore);
       movieCard.appendChild(overlay);
 
