@@ -1,0 +1,60 @@
+const movieData = [
+    {
+        "id": 1,
+        "title" : "Rental Family",
+        "description" : "Struggling to find purpose, an American actor lands an unusual gig with a Japanese agency to play stand-in roles for strangers. As he immerses himself in his clients' worlds, he begins to form genuine bonds that blur the lines between performance and reality. Confronting the moral complexities of his work, he soon rediscovers purpose, belonging, and the quiet beauty of human connection.",
+        "image_link" : "https://m.media-amazon.com/images/M/MV5BYmMxN2I3MWYtYjRhNS00ZDM1LWE4MDEtNzU2YTI4ZjNlYjg2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "trailer_link": "https://www.youtube.com/watch?v=n0pqP6ClcE8",
+        "release_date" : "November 21, 2025",
+    },
+    {
+        "id": 2,
+        "title" : "Sentimental Value",
+        "description" : "Sentimental Value is a 2025 comedy-drama film directed by Joachim Trier, who co-wrote the screenplay with Eskil Vogt. It stars Stellan Skarsgård, Renate Reinsve, Inga Ibsdotter Lilleaas, Elle Fanning, Cory Michael Smith and Anders Danielsen Lie.",
+        "image_link" : "https://m.media-amazon.com/images/M/MV5BNDVhNzE5ZDMtYWFlMi00YzY5LThmNDctY2FjNGY0NzVmNGY1XkEyXkFqcGc@._V1_.jpg",
+        "trailer_link": "https://www.youtube.com/watch?v=lKbcKQN5Yrw",
+        "release_date" : "Nov 7, 2021",
+    },
+    {
+        "id": 3,
+        "title" : "Hamnet",
+        "description" : "William Shakespeare and his wife, Agnes, celebrate the birth of their son, Hamnet. However, when tragedy strikes and Hamnet dies at a young age, it inspires Shakespeare to write his timeless masterpiece \"Hamlet.\"",
+        "image_link" : "https://resizing.flixster.com/f3hz8i40_ErlUqArDYDXIdTXB_w=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc5ZTU1ZWEzLTZjODAtNDc0Zi1iNjNjLWQ1NGYxNzE4NzM2MS5qcGc=",
+        "trailer_link": "https://www.youtube.com/watch?v=E2xtmPkuksA",
+        "release_date" : "November 27, 2025",
+    },
+    {
+        "id": 4,
+        "title" : "Eternity",
+        "description" : "In an afterlife where souls have one week to decide where to spend eternity, Joan is faced with the impossible choice between the man she spent her life with, and her first love, who died young and has waited decades for her to arrive.",
+        "image_link" : "https://resizing.flixster.com/3djMJei8gD-owuoxBiufaQP7ETA=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2FmMDkzMDQ1LWZmZWItNGE2My1iNWY5LTZlMTAxZTEyZWE2Ni5qcGc=",
+        "trailer_link": "https://www.youtube.com/watch?v=irXTps1REHU",
+        "release_date" : "November 14, 2025",
+    },
+    {
+        "id": 5,
+        "title" : "Bugonia",
+        "description" : "Two conspiracy-obsessed men kidnap the CEO of a major company when they become convinced that she's an alien who wants to destroy Earth.",
+        "image_link" : "https://i.ebayimg.com/images/g/ikIAAeSwPGBouyfb/s-l1200.jpg",
+        "trailer_link": "https://www.youtube.com/watch?v=bd_5HcTujfc",
+        "release_date" : "October 31, 2025",
+    },
+    {
+        "id": 6,
+        "title" : "Zootopia 2",
+        "description" : "Detectives Judy Hopps and Nick Wilde find themselves on the twisting trail of a mysterious reptile who turns the mammal metropolis of Zootopia upside down. Testing their growing partnership like never before, they go under cover in new parts of town to crack the case.",
+        "image_link" : "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0gVPFGLmauFlHIvzPFjkEl6bPulFofq3aNjF1ZX2KCWtbSxRBYNXhpGj9cBj0dYb-B1k8",
+        "trailer_link": "https://www.youtube.com/watch?v=BjkIOU5PhyQ",
+        "release_date" : "November 26, 2025",
+    },
+    {
+        "id": 7,
+        "title" : "Wicked: For Good",
+        "description" : "Now demonized as the Wicked Witch of the West, Elphaba lives in exile in the Ozian forest, while Glinda resides at the palace in Emerald City, reveling in the perks of fame and popularity. As an angry mob rises against the Wicked Witch, she'll need to reunite with Glinda to transform herself, and all of Oz, for good.",
+        "image_link" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTAY5HCDrHhlx4TMltMLQLVhMySq_DH1m1IgjQf7TyiM6_DWNiLV3Pb2Rnw0KOSbKatQQL",
+        "trailer_link": "https://www.youtube.com/watch?v=N-R_GTvJqh0",
+        "release_date" : "November 21, 2025",
+    },    
+]
+
+export default movieData

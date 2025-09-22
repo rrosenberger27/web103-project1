@@ -1,0 +1,291 @@
+/* Dark theme variables */
+:root {
+  --pico-background-color: #1a1a1a !important;
+  --pico-color: #ffffff !important;
+  --pico-card-background-color: #2a2a2a !important;
+  --pico-card-border-color: #404040 !important;
+}
+
+/* Override Pico's dark theme variables */
+[data-theme="dark"] {
+  --pico-background-color: #1a1a1a !important;
+  --pico-color: #ffffff !important;
+}
+
+/* Global dark background */
+body {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #1a1a1a !important;
+}
+
+/* Header styling - small and compact */
+header {
+  margin-top: -30px;
+  padding: 0.25rem 1rem;
+  background-color: rgba(42, 42, 42, 0.95);
+  border-bottom: 1px solid var(--pico-card-border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 60px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.header-right button {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+/* Movie grid layout */
+#main-content {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Movie card styling */
+.movie-card,
+.card {
+  background-color: var(--pico-card-background-color);
+  border: 1px solid var(--pico-card-border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  width: 280px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.movie-card:hover,
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.movie-card-overlay,
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  color: white;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover .movie-card-overlay,
+.card:hover .card-overlay {
+  transform: translateY(0);
+}
+
+.movie-card-overlay h3,
+.card-overlay h3,
+.card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.movie-card-overlay .see-more-btn,
+.card-overlay .card-link {
+  background-color: var(--pico-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.movie-card-overlay .see-more-btn:hover,
+.card-overlay .card-link:hover {
+  background-color: var(--pico-primary-hover);
+}
+
+/* Movie detail page styling */
+.movie-info {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.img-container {
+  background-color: var(--pico-card-background-color);
+  border: 1px solid var(--pico-card-border-color);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.movie-details {
+  background-color: var(--pico-card-background-color);
+  border: 1px solid var(--pico-card-border-color);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.movie-details h2 {
+  margin-top: 0;
+  color: var(--pico-color);
+  font-size: 2rem;
+}
+
+.movie-details p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--pico-color);
+}
+
+.movie-details a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--pico-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.movie-details a:hover {
+  background-color: var(--pico-primary-hover);
+}
+
+/* 404 page styling */
+.fof-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--pico-background-color);
+}
+
+.fof {
+  text-align: center;
+  background-color: var(--pico-card-background-color);
+  border: 1px solid var(--pico-card-border-color);
+  border-radius: 8px;
+  padding: 3rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fof h1 {
+  font-size: 4rem;
+  margin: 0 0 1rem 0;
+  color: var(--pico-primary);
+}
+
+.fof a {
+  color: var(--pico-primary);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--pico-primary);
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: all 0.2s ease;
+}
+
+.fof a:hover {
+  background-color: var(--pico-primary);
+  color: white;
+}
+
+.fof p {
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .movie-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  #main-content {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .movie-card,
+  .card {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .header-container {
+    padding: 0.5rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}
