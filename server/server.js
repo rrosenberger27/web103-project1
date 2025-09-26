@@ -1,4 +1,5 @@
 import express from 'express'
+import './config/dotenv.js'
 import movieRouter from './routes/movies.js'
 
 const app = express()

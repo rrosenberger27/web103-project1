@@ -5,7 +5,7 @@ import path from 'path'
 // utility function that convers a file url to a file path
 import { fileURLToPath } from 'url'
 
-import movieData from '../data/movies.js'
+import MovieController from '../controllers/movies.js'
 
 //import.meta.url contains the url of the current module file
 const __filename = fileURLToPath(import.meta.url)
@@ -15,9 +15,7 @@ const __dirname = path.dirname(__filename)
 const movieRouter = express.Router()
 
 // get route that returns back all the movie information
-movieRouter.get('/', (req, res) => {
-    res.status(200).send(movieData).json()
-})
+movieRouter.get('/', MovieController.getMovies)
 
 // get route that returns back the html for a movie detail view
 movieRouter.get('/:movieId', (req, res) => {
